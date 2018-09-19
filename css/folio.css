@@ -1,0 +1,152 @@
+
+   *,
+ *::before,
+ *::after{
+     box-sizing: border-box;
+ }
+ *:focus{
+     outline: none;
+ }
+ body{
+    padding: 0;
+    margin: 0;
+    background: url('../PHP/img/back.png');
+    color: aliceblue;
+    font-family: "Oxygen", sans-serif;
+    background-position: center;
+    background-size: cover;
+    
+ }
+nav a{
+    text-decoration: none; 
+ }
+nav a:hover{
+     text-decoration: none;
+     color: #102902;
+ }
+ .skills{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color: white;
+    background-color: #424242;
+}
+.css{
+    width: 96%;
+}
+.boot{
+    width: 90%;
+}
+.git{
+    width: 90%;
+}
+.php{
+    width: 90%;
+}
+.jquery{
+    width: 75%;
+}
+ img{
+     width: 100%;
+ }
+ .home img{
+     width: 100%;
+     height: 20%;
+     -webkit-filter: grayscale(50%) contrast(50%);
+     
+ }
+ .folio img{
+     filter: grayscale(100%);
+ }
+ aside{
+     position: fixed;
+     background: #222;
+     top: 0px;
+     left: 0px;
+      width: 120px;
+      height: 100%;
+      overflow: none;
+      z-index: 1;
+      text-align: center;
+      padding: 0;
+ }
+
+ aside img{
+     filter: grayscale(50%) contrast(50%) brightness(70%);
+     margin-bottom: -3px;
+ }
+ .materials-icons.md-36{
+     font-size: 36px;
+ }
+ aside a{
+   display: block;
+   padding: 15px 0;
+   color: white;
+   transition: all 0.35s;
+   text-transform: uppercase;
+   font-size: 15px;
+   letter-spacing: 2px; 
+ }
+ aside p{
+     margin: 0;
+     padding: 0;
+ }
+
+ aside a:hover{
+     background: #000;
+ }
+ aside nav a:nth-child(2){
+     background: #000;
+ }
+ aside nav a:nth-child(2):hover{
+    background: #b2b2b2;
+    color: #222;  
+ }
+
+ main{
+     max-width: 980px;
+     background: #000;
+     text-align: center;
+     padding: 12px 50px 12px 50px;
+     margin-left: 20%;
+ }
+ 
+
+ .folio h2,
+.about h2,
+.contact h2{
+    color: rgb(162, 212, 23);
+}
+.folio,
+.about,
+.contact{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300; 
+    max-width: 100%;
+    text-align: center;
+    padding: 12px 50px 12px 50px;
+    margin-left: 10%;
+    color: #102902;
+    font-size: 20px;
+
+}
+.row{
+    padding-left: 10px; 
+}
+.fa{
+    
+    padding: 7px;
+}
+.fa-twitter{
+    color: rgb(48, 206, 206);
+    
+}
+.fa-github{
+    color: rgba(12, 12, 12, 0.384);
+}
+footer{
+    font-size: 15px;
+    font-weight: bolder;
+    font: icon;
+}
