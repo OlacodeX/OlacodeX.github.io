@@ -151,16 +151,18 @@ footer{
     font: icon;
 }
 @media(max-width: 768px){
-    body,#contact{
+    body{
         margin-left: 20px;
         font-weight: normal;
-        text-align: center;
         width: 100%;
         padding: 0;
         margin: auto;
         font-family: 'Roboto', sans-serif;
-    
+        text-align: justify;
 
+    }
+    input{
+        margin-left: 10px;
     }
     aside{
         width: 60px;
