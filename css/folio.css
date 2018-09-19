@@ -150,3 +150,14 @@ footer{
     font-weight: bolder;
     font: icon;
 }
+@media(max-width: 768px){
+    body{
+        margin-left: 20px;
+        font-weight: normal;
+        text-align: center;
+
+    }
+    aside{
+        width: 60px;
+    }
+}
