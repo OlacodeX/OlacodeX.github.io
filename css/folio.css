@@ -161,7 +161,9 @@ footer{
         text-align: center;
 
     }
-    
+    .contact{
+        margin-left: 30px;
+    }
     aside{
         width: 80px;
     }
