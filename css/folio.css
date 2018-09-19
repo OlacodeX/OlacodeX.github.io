@@ -151,10 +151,11 @@ footer{
     font: icon;
 }
 @media(max-width: 768px){
-    body{
+    body,.contact{
         margin-left: 20px;
         font-weight: normal;
         text-align: center;
+        width: 100%;
 
     }
     aside{
