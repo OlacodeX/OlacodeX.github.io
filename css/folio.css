@@ -10,12 +10,19 @@
  body{
     padding: 0;
     margin: 0;
-    background: url('../OlacodeX.github.io/img/back.png');
+    background: url('../image/unnamed\ \(1\).png');
     color: aliceblue;
     font-family: "Oxygen", sans-serif;
     background-position: center;
     background-size: cover;
+    width:100%;
+    text-align: center;
     
+ }
+ p{
+     margin: 0;
+     padding: 0;
+     text-align: center;
  }
 nav a{
     text-decoration: none; 
@@ -149,23 +156,62 @@ footer{
     font-size: 15px;
     font-weight: bolder;
     font: icon;
+    text-align: center;
 }
+
 @media(max-width: 768px){
     body{
-        margin-left: 20px;
         font-weight: normal;
         width: 100%;
         padding: 0;
-        margin: auto;
+        margin: 0;
         font-family: 'Roboto', sans-serif;
         text-align: center;
 
     }
-    .contact{
-        margin-left: 30px;
+    p{
+        font-size: 15px;
+        text-align: justify;
     }
     aside{
-        width: 80px;
+        display: none;
+        background: transparent;
+        width: 0;
        
     }
+    aside nav{
+        display:none;
+    }
+    footer{
+        text-align: center;
+    }
+    .folio h2,
+.about h2,
+.contact h2{
+    color: rgb(162, 212, 23);
+    font-size: 20px;
+}
+
+.folio,
+.about,
+.contact{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300; 
+    max-width: 100%;
+    text-align: center;
+    padding: 12px 50px 12px 50px;
+    margin:0;
+    color: #102902;
+    font-size: 20px;
+
+}
+
+main{
+    max-width: 980px;
+    background: #000;
+    text-align: center;
+    padding: 12px 50px 12px 50px;
+    margin:0;
+}
 }
