@@ -159,6 +159,14 @@ nav a:hover{
 .fa-github{
     color: rgba(12, 12, 12, 0.384);
 }
+.spot{
+    color: tomato;
+    font-weight: bolder;
+    font-style: oblique;
+}
+nav.navbar{
+    display: none;
+}
 footer{
     font-size: 15px;
     font-weight: bolder;
@@ -166,7 +174,9 @@ footer{
     text-align: center;
 }
 @media(max-width:700px){
-  
+    nav.navbar{
+        display: inline;
+    }
     aside{
         display: none;
         background: transparent;
