@@ -29,7 +29,7 @@
                 <ul class="nav navbar-nav navbar-right" >
                   <li><a target="blank" class="active" style="font-size: 18px;color: aqua;" href="index.html" data-toggle="tooltip" data-placement="top" title="OLAWALE HOME"><i class="fa fa-home fa-lg"></i></a></li>
                   <li><a style="color:aqua; font: bold;" href="aboutme.html" data-toggle="tooltip" data-placement="top" title="MEET OLAWALE"><i class="fa fa-users fa-lg"></i></a></li>
-                  <li><a style="font-size: 18px; color: aqua;" href="#" data-toggle="tooltip" data-placement="top" title="CONTACT OLAWALE"><i class="fa fa-sign-out fa-lg"></i></a></li>
+                  <li><a style="font-size: 18px; color: aqua;" href="aboutme.html#contact" data-toggle="tooltip" data-placement="top" title="CONTACT OLAWALE"><i class="fa fa-sign-out fa-lg"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -54,8 +54,29 @@
            </div>
             <p>&copy 2019 Olawale design | All rights reserved</p>
         </section>
+        <a  style="float:left; text-decoration:none;background:transparent; color:aliceblue;" class="btn btn-default" href="#myPage" onclick="topFunction()" id="myBtn">
+                <span class="glyphicon glyphicon-chevron-up" style="font-size:30px; "></span> 
+        </a>
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 </div>
 </body>
