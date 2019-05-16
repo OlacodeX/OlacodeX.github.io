@@ -138,7 +138,7 @@
             </div>
     </section>
     <section>
-            <div id="contact" class="container contact">
+            <div id="contact" class="container contact"  style="padding-bottom:77px;">
                     <h2>CONTACT</h2>
                       <div class="col-sm-12">
                         <p>Contact me and I will get back to you within 24hours.</p>
