@@ -1,5 +1,5 @@
 
-   *,
+*,
  *::before,
  *::after{
      box-sizing: border-box;
@@ -10,14 +10,26 @@
  body{
     padding: 0;
     margin: 0;
-    background: url('../img/back.png');
-    color: aliceblue;
+   
+    color: rgb(4, 133, 245);
     font-family: "Oxygen", sans-serif;
-    background-position: center;
-    background-size: cover;
+  
     width:100%;
     text-align: center;
     
+ }
+ .container-fluid.main{
+    background: url('../img/light1.jpg');
+    background-position: center;
+    background-size: cover;
+ }
+ nav.navbar-default{
+     background: transparent;
+     border: none;
+ }
+ div.navbar-collapse{
+     text-align: left;
+    border: none;
  }
  p{
      margin: 0;
@@ -33,7 +45,6 @@ nav a:hover{
  }
  .skills{
     text-align: right;
-    padding-right: 20px;
     line-height: 30px;
     color: white;
     background-color: #424242;
@@ -62,7 +73,7 @@ nav a:hover{
      
      
  }
- aside{
+ /*aside{
      position: fixed;
      background: #222;
      top: 0px;
@@ -106,15 +117,22 @@ nav a:hover{
     color: #222;  
  }
 
+img.circle{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}*/
  main{
-     max-width: 980px;
+     width: 100%;
      color: Aliceblue;
      text-align: center;
-     padding: 12px 50px 12px 50px;
-     margin-left: 20%;
+    
  }
 
-
+.jumbotron{
+    background: transparent;
+}
  main h3,
  .folio h3,
 .about h3,
@@ -163,35 +181,24 @@ nav a:hover{
     
 }
 .fa-github{
-    color: rgba(12, 12, 12, 0.384);
+    color: rgb(0, 0, 0);
 }
 .spot{
     color: tomato;
     font-weight: bolder;
     font-style: oblique;
 }
-nav.navbar{
-    display: none;
-}
+
 footer{
     font-size: 15px;
     font-weight: bolder;
     font: icon;
+    color: rgb(188, 216, 241);
     text-align: center;
 }
 @media(max-width:700px){
-    nav.navbar{
-        display: inline;
-    }
-    aside{
-        display: none;
-        background: transparent;
-        width: 0;
-       
-    }
-    aside nav{
-        display:none;
-    }
+   
+   
     
     #about,
     #folio,
@@ -215,16 +222,13 @@ footer{
         font-size: 15px;
         text-align: center;
     }
-    aside nav{
-        display:none;
-    }
     footer{
         text-align: center;
     }
     .folio h2,
 .about h2,
 .contact h2{
-    color: rgb(162, 212, 23);
+   
     font-size: 20px;
 }
 .row{
@@ -240,11 +244,10 @@ footer{
     width: 100%;
     text-align: center;
     margin:0;
-    color: #102902;
+    
     font-size: 20px;
 
 }
-
 main{
     max-width: 980px;
     background: #000;
