@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OLAWALE|HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/folio2.css">
+  <html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+     <link href="https://fonts.googleapis.com/css?family=coiny" rel="stylesheet" type="text/css">
+   <style>
+       body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+      background: rgb(2, 118, 172);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 5px 5px 4px grey;
+    text-transform:capitalize;
+   
+  }
+  
+  .sidebar a {
+    color: black;
+    padding: 10px 0px 1px 0px;
+    text-decoration: none;
+    text-align:justify;
+  }
+  
+  .sidebar li {
+    color: black;
+    padding: 0px 40px 40px 0px;
+    text-decoration: none;
+    text-align:justify;
+  }
+   
+  .sidebar a.active {
+    text-transform:uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: bisque;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  div.content,
+  div.contents {
+    margin-left: 200px;
+  }
+  .icon-bar{
+      background-color: black;
+  }
+  a.btn-success{
+      padding: 6px 25px 6px 25px;
+      text-align:center;
+      color:bisque;
+      background-color:rgb(23, 214, 189);
+      border-radius:5%;
+  }
+  
+  .panel.edit{
+    width:400px;
+    margin-bottom:15px;
+    border-bottom:solid 2px gray;
+    box-shadow: 5px 3px 5px 7px rgba(0, 0, 0, 0.822);
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    font-weight:bold;
+    text-transform:uppercase;
+  }
+
+  /****/
+  .content .col-sm-12.top{
+      height: 700px;
+      background: rgb(6, 153, 221);
+  }
+  
+.img-container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-container:hover{
+    background-color:#02c292bb;
+}
+.img-container:hover .image {
+  opacity: 0.3; 
+  background:#02c292bb;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+  
+}
+
+.info {
+ 
+  color: white;
+  font-size: 30px;
+  line-height: 2em;
+}
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+     
+    }
+  
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+   </style>
+   </head>
+   <body>
+   <div class="sidebar">
+   <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                      </button> 
+                     
+                     </div>
+                     <div class="collapse navbar-collapse" id="myNavbar">
+                <ul style="list-style:none;" id="myNavbar">
+                    <li> <a href="#myPage"><img class="img-responsive" style="vertical-align: middle; width: 50px;height: 50px;border-radius: 50%;" src="img/OLA.jpg" alt="Logo">Olawale Williams</a></li><br>
+                     <li><a href="profile.php">My profile</a></li>
+                     <li><a href="upload.php">Upload Design</a></li>
+                     <li><a href="userhome.php">Guide</a></li>
+                     <li><a href="#">Manage Designs</a></li>
+                     <li><a href="prologout.php" class="btn btn-success btn-lg">Sign Out</a></li>
+                </ul>
+  </div>
+  </div>
+<div class="content"style="background: rgb(6, 153, 221);"> 
+        <div class="col-sm-12 top">
+        <div class="col-sm-7">
+            <h4 class="text-justify">Hello, I'm</h4>
+           <h1 style="color: aliceblue; text-align: justify;">Olawale Aluko Williams</h1> 
+          
+           <h3 class="text-justify">Website Designer || Developer</h3> 
+           <p class="text-justify">
+                <a href="https://facebook.com/aluko.olawale1"><i  style="font-size: 25px;" class="fa fa-facebook-f"></i></a>
+                <a href=""><i   style="font-size: 30px;" class="fa fa-twitter"></i></a>
+                <a href=""><i  style="font-size: 30px;" class="fa fa-github"></i></a>
+           </p>
+           <a href="" class="btn btn-default btn-lg pull-left">Say Hi</a>
+           <a href="" class="btn btn-default btn-lg pull-left">Get a Website?</a>
+    </div>
+    <div class="col-sm-5"></div>
+</div>
+</div>
+<div class="contents">
+    <div class="container">
+    <div class="col-sm-12 mid">
+    <h3 class="text-justify">About Me</h3>
+    <p style="text-align:justify;">
+        <span>Hello, I'm Olawale,</span>a web designer and Developer.
+        I am not the best at this as no one is an Island of knowledge but am good
+        at what I do.
+    </p>
+    <p style="text-align:justify;">
+        I love to take up new challenges, am a football fan as well as an undergraduate student in 
+        my final year of study.
+        I believe in a simple and user friendly web layout, this I deliver to my customers to the best 
+        of my experience.
+        I am currently skilled in HTML5, CSS3, JQUERY, BOOTSTRAP, PHP and GITHUB.
+    </p><br>
+    <p class="text-justify">
+        <h2 style="text-align:justify;">Educational background</h2>
+        <p style="text-align:justify;">
+        fhjjhkl;treryjhgbj
+        my final year of study.
+        I believe in a simple and user friendly web layout, this I deliver to my customers to the best 
+        of my experience.</p> <br>
+        <a href="" class="btn btn-default pull-left" style="text-align: justify;">Check out my cv</a>
+    </p>
+</div>
+        <div class="col-sm-12 text-justify"style="margin-bottom:100px;">
+            <h3 class="text-justify" style="text-transform:uppercase;color: rgb(12, 236, 23);font-weight: bold;">My Skill Set</h3>
+            <div class="col-sm-6 Skill">
+                    <p>HTML 5</p>
+                    <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" data-transitiongoal="96"></div>
+                    </div>
+                    <p>MYSQL</p>
+                    <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar" role="progressbar" data-transitiongoal="80"></div>
+                    </div>
+                    <p>LARAVEL</p>
+                    <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar" role="progressbar" data-transitiongoal="25"></div>
+                    </div>
+                    <p>JAVASCRIPT</p>
+                    <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar" role="progressbar" data-transitiongoal="40"></div>
+                    </div>
+                      </div>
+
+                      <div class="col-sm-6 Skill">
+                            <p>CSS 3</p>
+                            <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" data-transitiongoal="96"></div>
+                            </div>
+                            <p>PHP</p>
+                            <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar" role="progressbar" data-transitiongoal="80"></div>
+                            </div>
+                            <p>BOOTSTRAP</p>
+                            <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar" role="progressbar" data-transitiongoal="96"></div>
+                            </div>
+                            <p>GITHUB</p>
+                            <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar" role="progressbar" data-transitiongoal="60"></div>
+                            </div>
+                              </div>
+                              </div>
+
+            <div class="col-sm-12 text-justify folio">
+            <h2 style="margin-bottom:60px;color: rgb(12, 236, 23);font-weight: bold;">PORTFOLIO</h2>
+            <div class="row">
+            <div class="col-sm-6">
+            <h3>Mobile Friendly</h3>
+            <p style="text-align:justify;">
+                Building mobile friendly Websites.
+            </p>
+            </div>
+            <div class="col-sm-6">
+                <h3>Auto responsive</h3>
+                <p style="text-align:justify;">
+                    Regardless of the device screen, your website is sure to look good.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <h3>UX/UI Design</h3>
+                <p style="text-align:justify;">
+                    Simple but excellent user interface and great user experience.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                    <h3>Design for all</h3>
+                    <p style="text-align:justify;">
+                        My designs are for both companies, cooperate bodies, individuals, etc.
+                        No matter who you are or what you do, there is a design for you because everyone 
+                        deserves a voice on the internet.
+                    </p>
+                </div>
+    <div class="col-sm-3">
+        <div class="img-container">
+            <img src="img/light.jpg" alt="" class="image">
+            <div class="middle">
+                <div class="info">
+                    <p>
+                        orfijiriepwiiw <br>
+                       <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+            <div class="img-container">
+                <img src="img/light.jpg" alt="" class="image">
+                <div class="middle">
+                    <div class="info">
+                        <p>
+                            orfijiriepwiiw <br>
+                           <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+                <div class="img-container">
+                    <img src="img/light.jpg" alt="" class="image">
+                    <div class="middle">
+                        <div class="info">
+                            <p>
+                                orfijiriepwiiw <br>
+                               <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                    <div class="img-container">
+                        <img src="img/light.jpg" alt="" class="image">
+                        <div class="middle">
+                            <div class="info">
+                                <p>
+                                    orfijiriepwiiw <br>
+                                   <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                <div class="img-container">
+                    <img src="img/light.jpg" alt="" class="image">
+                    <div class="middle">
+                        <div class="info">
+                            <p>
+                                orfijiriepwiiw <br>
+                                <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                    <div class="img-container">
+                        <img src="img/light.jpg" alt="" class="image">
+                        <div class="middle">
+                            <div class="info">
+                                <p>
+                                    orfijiriepwiiw <br>
+                                    <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                        <div class="img-container">
+                            <img src="img/light.jpg" alt="" class="image">
+                            <div class="middle">
+                                <div class="info">
+                                    <p>
+                                        orfijiriepwiiw <br>
+                                        <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        <div class="col-sm-3">
+            <div class="img-container">
+                <img src="img/light.jpg" alt="" class="image">
+                <div class="middle">
+                    <div class="info">
+                        <p>
+                            orfijiriepwiiw <br>
+                            <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+                <div class="img-container">
+                    <img src="img/light.jpg" alt="" class="image">
+                    <div class="middle">
+                        <div class="info">
+                            <p>
+                                orfijiriepwiiw <br>
+                                <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                    <div class="img-container">
+                        <img src="img/light.jpg" alt="" class="image">
+                        <div class="middle">
+                            <div class="info">
+                                <p>
+                                    orfijiriepwiiw <br>
+                                    <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                        <div class="img-container">
+                            <img src="img/light.jpg" alt="" class="image">
+                            <div class="middle">
+                                <div class="info">
+                                    <p>
+                                        orfijiriepwiiw <br>
+                                        <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                            <div class="img-container">
+                                <img src="img/light.jpg" alt="" class="image">
+                                <div class="middle">
+                                    <div class="info">
+                                        <p>
+                                            orfijiriepwiiw <br>
+                                            <h6> <a href="" style="float: left;"><i class="fa fa-users fa-sm"></i></a> <a href=""><i class="fa fa-users fa-sm"></i></a> <a href="" style="float: right;"><i class="fa fa-users fa-sm"></i></a></h6>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+    <div class="col-sm-12" style="background: lightgreen; margin: 0px;padding: 0px;">
+        <div class="inner" >
+        <a href="#1" data-toggle="collapse"><img src="img/use1.png" alt="" width="20%"></a>
+       </div>
+       <div class="inner">
+            <a href="#2" data-toggle="collapse"><img src="img/use1.png" alt="" width="20%"></a>
+       </div>
+       <div class="inner">
+            <a href="#1" data-toggle="collapse"><img src="img/use1.png" alt="" width="20%"></a>
+       </div>
+       <div class="inner">
+            <a href="#1" data-toggle="collapse"><img src="img/use1.png" alt="" width="20%"></a>
+       </div>
+       <div class="inner">
+            <a href="#1" data-toggle="collapse"><img src="img/use1.png" alt="" width="20%"></a>
+       </div>
+    </div>
+    
+    <div class="col-sm-12 text-center">
+            <div id="1" class="collapse" >
+                    Lorem ipsum dolor text....
+            </div>
+            <div id="2" class="collapse" >
+                    Lorem ipsum dolor text....
+            </div>
+    </div>
+
+    <div class="col-sm-12 text-justify">
+        <h3 class="text-justify">Contact</h3>
+        <h5>Let's connect</h5>
+        <div class="col-sm-6">
+                <p class="text-justify"> <span class="btn btn-default pull-left"><i class="fa fa-users fa-lg"></i></span>
+                Address <br>
+                No 14, Judge Street Lagos. 
+               </p>
+        </div>
+        <div class="col-sm-6">
+                <p class="text-justify"> <span class="btn btn-default pull-left"><i class="fa fa-users fa-lg"></i></span>
+                Address <br>
+                No 14, Judge Street Lagos. 
+               </p>
+        </div>
+        <div class="col-sm-6">
+                <p class="text-justify"> <span class="btn btn-default pull-left"><i class="fa fa-users fa-lg"></i></span>
+                Address <br>
+                No 14, Judge Street Lagos. 
+               </p>
+        </div>
+        <div class="col-sm-6">
+                <p class="text-justify"> <span class="btn btn-default pull-left"><i class="fa fa-users fa-lg"></i></span>
+                Address <br>
+                No 14, Judge Street Lagos. 
+               </p>
+        </div>
+    </div>
+
+    <div class="col-sm-6"style="border-left:solid 1px white;">
+        <h3 class="text-justify">Send Message</h3>                
+            <div class="row">
+                <form action="folio.php" method="post" >
+              <div class="col-sm-12 form-group">
+                    <div class="col-sm-6 form-group">
+                       <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="P.num" name="P.num" placeholder="Phone number(Whatsapp preferable)...." type="number" required>
+              </div>
+            <div class="col-sm-12">
+                
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+            
+            <div class="col-sm-12 form-group">
+                    <br><textarea class="form-control" id="comments" name="comment" placeholder="Comment" rows="8" cols="10"></textarea>
+        </div>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button style="background: #16db0f;" class="btn btn-default btn-lg pull-left" type="submit" name="contact">Contact Me</button>
+              </div>
+              
+            </div>
+            </div>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+          <h3 class="text-justify">Social links</h3>
+          <div class="col-sm-12">
+              
+          </div>
+      </div>
+
+</div>
+
+    <footer>
+        
+        <section class="text-center">
+            <div class="col-sm-12">
+              <a href="https://facebook.com/aluko.olawale1"><i  style="font-size: 25px;" class="fa fa-facebook-f"></i></a>
+              <a href=""><i   style="font-size: 30px;" class="fa fa-twitter"></i></a>
+              <a href=""><i  style="font-size: 30px;" class="fa fa-github"></i></a>
+           </div>
+            <p>&copy 2019 Olawale design | All rights reserved</p>
+        </section>
+        <a  style="float:left; text-decoration:none;background:transparent; color:aliceblue;" class="btn btn-default" href="#myPage" onclick="topFunction()" id="myBtn">
+                <span class="glyphicon glyphicon-chevron-up" style="font-size:30px; "></span> 
+        </a>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.progress .progress-bar').progressbar({display_text: 'fill', use_percentage: true});
+    });
+</script>
+<script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</body>
+</html>
