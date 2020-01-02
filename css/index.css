@@ -84,7 +84,7 @@ a.btn:hover{
         background: linear-gradient(hsla(257, 40%, 49%, 0.692),hsla(257, 40%, 49%, 0.692)), url('../images/bg-desktop.svg') no-repeat;
         background-position: center;
         background-size: cover;
-        height:980px;
+        height:500px;
         text-align: center;
     }
     div.sub{
@@ -109,6 +109,7 @@ a.btn:hover{
         font-family: 'Poppins';
         font-weight: 700;
         color: #fff;
+        text-align: justify;
     }
     .col.two p{
         padding-right: 0px;
