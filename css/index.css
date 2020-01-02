@@ -1,0 +1,144 @@
+html{
+    width: 1440px;
+    background: linear-gradient(hsla(257, 40%, 49%, 0.692),hsla(257, 40%, 49%, 0.692)), url('../images/bg-desktop.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:700px;
+}
+body{
+    font-family: 'Open Sans';
+    background: hsla(257, 40%, 49%, 0.61);
+    margin: 0;
+}
+nav li{
+    list-style: none;
+}
+nav li a img{
+    margin-bottom: 30px;
+    padding-left: 100px;
+    margin-top: 40px;
+}
+div.sub{
+    padding: 60px 100px 590px 100px;
+}
+.col{
+    width: 60%;
+    float: left;
+}
+.col.two{
+    margin-top: 30px;
+    width: 40%;
+}
+.col.two h1{
+    padding-right: 150px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #fff;
+}
+.col.two p{
+    padding-right: 100px;
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: 400;
+}
+a.btn{
+    background: #fff;
+    padding: 7px 40px 7px 40px;
+    text-decoration: none;
+    border-radius: 60px;
+}
+a.btn:hover{
+    background: transparent;
+    color: #fff;
+    border: #fff 1px solid;
+}
+.fa{
+    padding: 7px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color:  #fff;
+  }
+.btn.btn-info{
+    border-radius: 100%;
+    color:  rgb(141, 139, 139); padding: 7px;
+     background:transparent;
+     margin-right: 10px;
+     border: 1px solid #fff;
+     float: right;
+     margin-top: 300px;
+   }
+   
+   @media only screen and (max-width: 768px) {
+    html{
+        width: 375px;
+        background: linear-gradient(hsla(257, 40%, 49%, 0.692),hsla(257, 40%, 49%, 0.692)), url('../images/bg-desktop.svg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        height:900px;
+        text-align: center;
+    }
+    div.sub{
+        padding: 60px 50px 60px 0px;
+    }
+    .col{
+        width: 100%;
+        float: none;
+    }
+    .col img{
+        
+        width: 400px;
+        padding-left: 40px;
+    }
+    .col.two{
+        margin-top: 30px;
+        width: 100%;
+        padding-left: 40px;
+    }
+    .col.two h1{
+        padding-right: 0px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        color: #fff;
+    }
+    .col.two p{
+        padding-right: 0px;
+        color: rgba(255, 255, 255, 0.63);
+        font-weight: 400;
+    }
+    a.btn{
+        background: #fff;
+        padding: 7px 40px 7px 40px;
+        text-decoration: none;
+        border-radius: 60px;
+    }
+    a.btn:hover{
+        background: transparent;
+        color: #fff;
+        border: #fff 1px solid;
+    }
+    .fa{
+        padding: 7px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        color:  #fff;
+      }
+    .btn.btn-info{
+        border-radius: 100%;
+        color:  rgb(141, 139, 139); padding: 7px;
+         background:transparent;
+         margin-right: 10px;
+         border: 1px solid #fff;
+         float: none;
+         margin-top: 50px;
+       }
+       .sub p.pad{
+        padding-left: 80px;
+       }
+       nav li a img{
+           margin-bottom: 30px;
+           padding-left: 0;
+           margin-top: 40px;
+       }
+   
+    }
