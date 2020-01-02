@@ -84,7 +84,7 @@ a.btn:hover{
         background: linear-gradient(hsla(257, 40%, 49%, 0.692),hsla(257, 40%, 49%, 0.692)), url('../images/bg-desktop.svg') no-repeat;
         background-position: center;
         background-size: cover;
-        height:900px;
+        height:980px;
         text-align: center;
     }
     div.sub{
@@ -97,12 +97,12 @@ a.btn:hover{
     .col img{
         
         width: 300px;
-        padding-left: 0;
+        padding-left: 20px;
     }
     .col.two{
         margin-top: 30px;
         width: 100%;
-        padding-left: 0;
+        padding-left: 20px;
     }
     .col.two h1{
         padding-right: 0;
