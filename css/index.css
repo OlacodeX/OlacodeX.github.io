@@ -68,6 +68,16 @@ a.btn:hover{
      margin-top: 300px;
    }
    
+.btn.btn-info:hover{
+    border-radius: 100%;
+    color:  rgb(141, 139, 139); padding: 7px;
+     background:transparent;
+     margin-right: 10px;
+     border: 1px solid #fff;
+     float: right;
+     margin-top: 300px;
+   }
+   
    @media only screen and (max-width: 768px) {
     html{
         width: 375px;
@@ -86,7 +96,7 @@ a.btn:hover{
     }
     .col img{
         
-        width: 400px;
+        width: 300px;
         padding-left: 40px;
     }
     .col.two{
